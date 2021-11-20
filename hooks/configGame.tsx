@@ -1,4 +1,4 @@
-import { useState } from "react";
+import getDB from "../constants/db";
 
 interface GameState {
   timestamp: Date;
@@ -14,6 +14,4 @@ export interface Game {
   state: GameState;
 }
 
-export default function useGame() {
-  const [activeGame, setActiveGame] = useState<Game | null>(null);
-}
+export default function useConfigGame() {}

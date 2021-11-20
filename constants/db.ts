@@ -1,4 +1,5 @@
 import { initializeApp, FirebaseApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 let app: FirebaseApp;
 
@@ -17,5 +18,5 @@ export default function getDB() {
       "default"
     );
   }
-  return app;
+  return getFirestore(app);
 }

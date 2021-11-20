@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface CardProps {
   inspect?: () => boolean;
-  position?: "hand" | "market";
+  position?: "hand" | "market" | "hassle";
 }
 
 export default function Card({ inspect }: CardProps) {
